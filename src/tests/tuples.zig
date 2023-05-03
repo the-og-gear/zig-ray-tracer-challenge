@@ -162,3 +162,10 @@ test "the cross product of two vectors" {
     try std.testing.expect(T.equal_tuple(T.cross(a, b), c));
     try std.testing.expect(T.equal_tuple(T.cross(b, a), d));
 }
+
+test "color is aliased to tuple" {
+    const c = T.color(-0.5, 0.4, 1.7);
+
+    const r = T.tuple(-0.5, 0.4, 1.7, 0.0);
+    try std.testing.expect(T.equal_tuple(c, r));
+}

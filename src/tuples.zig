@@ -43,6 +43,10 @@ pub fn vector(x: f32, y: f32, z: f32) Tuple {
     return Tuple{ .x = x, .y = y, .z = z, .w = 0.0 };
 }
 
+pub fn color(r: f32, g: f32, b: f32) Tuple {
+    return vector(r, g, b);
+}
+
 pub fn add_tuple(a: Tuple, b: Tuple) Tuple {
     return Tuple{ .x = a.x + b.x, .y = a.y + b.y, .z = a.z + b.z, .w = a.w + b.w };
 }

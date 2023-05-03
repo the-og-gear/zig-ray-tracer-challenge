@@ -16,6 +16,7 @@
 
 const std = @import("std");
 pub const tuples = @import("tuples.zig");
+pub const canvas = @import("canvas.zig");
 
 const Projectile = struct { position: tuples.Tuple, velocity: tuples.Tuple };
 const Environment = struct { gravity: tuples.Tuple, wind: tuples.Tuple };
